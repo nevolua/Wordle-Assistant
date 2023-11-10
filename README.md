@@ -10,17 +10,17 @@ Javascript code which, when ran on wordlegame.org during a game, will return ALL
 ## Running the script
 
 1. Open main.js, then copy all of it. 
-2. Paste the script into the developer console of a tab opened to wordlegame.org and press enter. (which runs the script)
-3. Run the script, and it will give you the most likely words, which you can use for the next step of the game.
-4. Repeat step 3 until success.
+2. Run the script in the dev console, and it will read the words you've entered into the game, then with the data it's collected, print out a list of possible words to the console. 
+3. Enter one of the possible words provided.
+4. Repeat step 2 and 3 until success (almost 100% guaranteed to win unless you pick weirdly abstract words)
 
 ## Important Notes:
 
-- Every time the script is ran, it will calculate the possible words using the criteria specified (green, yellow, or grey letters) by the game, and print them to the console.
-- So, if you run the script without entering any words into the game, it will give a list of thousands of words, because there is no criteria to be met.
+- Every time the script is ran, it will calculate the possible words using the previously entered words, which come out to green, yellow, or grey letters. It then prints the list of possible words, along with some other data to the console.
+- If no words are entered yet, it will return undefined.
 - The more criteria specified by the game, the more the script can narrow down the possible words.
-- Once you've ran the script once, instead of pasting it again, you can make it easier by pressing up-arrow while having the command line selected, and it will automatically fill in with the script.
-
+- This project is open to contributions, specifically an automation of this script, which makes it easier to use, in the form of an extension/more complex script/program.
+  
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
