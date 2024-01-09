@@ -77,9 +77,13 @@ rowElements.forEach(function(rowElement) {
 
     if (letterClass.includes('letter-absent')) {
       letter = [text];
-    } else if (letterClass.includes('letter-elsewhere')) {
+    }
+    
+    if (letterClass.includes('letter-elsewhere')) {
       letter = [text, 'y'];
-    } else {
+    } 
+    
+    if (letterClass.includes('letter-correct')) {
       letter = [text, 'g'];
     }
     rowData.push(letter);
