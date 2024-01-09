@@ -50,9 +50,7 @@ function applyInput(inputs) {
     handleLetter(input.letter.toLowerCase(), type, index)
   });
 
-  console.log(`\n\nGreen Letters: `);
-  console.log(greenLetters);
-  console.log(`\nYellow Letters:\n[${yellowLetters.toString()}] \n\nGrey Letters:\n[${greyLetters.toString()}]`);
+  console.log(`\n\nGreen: ${greenLetters}\nYellow: [${yellowLetters.toString()}] \nGrey: [${greyLetters.toString()}]`);
 
   possibleWords = possibleWords.filter(word => checkWord(word));
 
